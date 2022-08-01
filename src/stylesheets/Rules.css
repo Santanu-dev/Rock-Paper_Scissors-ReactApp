@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed);
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed';
+}
+
+.rules-section{
+    background-color: var(--white-clr);
+    margin-top: 26%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules-header{
+    margin: 24%;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--dark-text);
+}
+
+.rules{
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.close-btn{
+    margin: 15%;
+    height: 20px;
+    width: 20px;
+    opacity: 0.2;
+}
+
+@media screen and (min-width: 376px) and (max-width: 900px) {
+    .rules-section{
+        height: 100vh;
+        margin-top: 0%;
+    }
+    .close-btn{
+        height: 30px;
+        width: 30px;
+        opacity: 0.2;
+    }
+    .rules-header{
+        margin: 15% 24%;
+        font-size: 35px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--dark-text);
+    }
+    
+    .rules{
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1599px){
+    .rules-section{
+        height: 100vh;
+        margin-top: 13%;
+    }
+    .rules{
+        margin-top: -5%;
+    }
+    .rules-header{
+        margin: 15% 24%;
+    }
+}
+
+
+@media screen and (min-width: 1600px){
+    .rules-header{
+        margin: 15% 24%;
+    }
+    
+    .rules{
+        margin-top: -5%;
+    }
+    .rules-section{
+        height: 100vh;
+        margin-top: 3%;
+    }
+}

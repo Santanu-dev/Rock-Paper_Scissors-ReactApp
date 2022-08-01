@@ -1,0 +1,105 @@
+.buttons-selection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30%;
+}
+
+.user-selection, .com-selection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    margin: 10%;
+    border: 15px solid rgb(33, 214, 33);
+}
+
+.com-selection{
+    border: 15px solid rgb(235, 30, 166);
+}
+
+.com-selection > .house-picked{
+    position: absolute;
+    top: 120%;
+    color: #f0f0f0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.user-selection > .user-picked{
+    position: absolute;
+    top: 120%;
+    color: #f0f0f0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-rules{
+    margin: 28px 30%;
+    padding: 10px 60px;
+    border-radius: 5px;
+    border: 5px solid var(--header-outline);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color: #f0f0f0;
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px){
+    .btn-rules{
+        margin: 3% 35%;
+        padding: 10px 19px;
+        border-radius: 5px;
+        border: 5px solid var(--header-outline);
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        color: #f0f0f0;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1599px){
+
+    .user-selection, .com-selection{
+        margin: -20% 10%;
+    }
+    .btn-rules{
+        margin: 20% 40%;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 5px solid var(--header-outline);
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        color: #f0f0f0;
+    }
+}
+
+@media screen and (min-width: 1600px){
+
+    .btn-rules {
+        margin: -6% 42%;
+        padding: 22px 61px;
+        border-radius: 15px;
+        border: 5px solid var(--header-outline);
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        color: #f0f0f0;
+        font-size: 25px;
+    }
+
+    .user-selection, .com-selection{
+        height: 250px;
+        width: 250px;
+    }
+
+    .user-selection, .com-selection{
+        margin: -20% 10%;
+    }
+}

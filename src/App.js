@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ParentScreen from "./Components/ParentScreen";
+import DeviceOrientation, { Orientation } from "react-screen-orientation";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    //Orientaion is just for tutorial not implemented
+    <DeviceOrientation lockOrientation={'landscape'}>
+        {/* Will only be in DOM in landscape */}
+        <Orientation orientation='landscape' alwaysRender={false}>
+          <div className="App">
+            <ParentScreen />
+          </div>
+        </Orientation>
+        {/* Will stay in DOM, but is only visible in portrait */}
+        <Orientation orientation='portrait' alwaysRender={false}>
+          <div className="App">
+            <ParentScreen />
+          </div>
+        </Orientation>
+      </DeviceOrientation>
   );
-}
+};
 
 export default App;

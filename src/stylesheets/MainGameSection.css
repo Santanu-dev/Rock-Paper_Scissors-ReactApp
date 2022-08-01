@@ -1,0 +1,218 @@
+@import url(https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed);
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed';
+}
+
+.buttons{
+    position: relative;
+    height: 55vh;
+}
+
+.triangle{
+    height: 180px;
+}
+
+.svg-triangle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+}
+
+.svg-rock, .svg-paper, .svg-scissors{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+}
+
+.svg-scissors{
+    border: 15px solid #eeaf27;
+    bottom: 77%;
+    left: 62%;
+}
+
+.svg-paper{
+    border: 15px solid #2a6de9;
+    bottom: 77%;
+    left: 4%;
+}
+
+.svg-rock{
+    border: 15px solid #f3482a;
+    bottom: 34%;
+    left: 33%;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+}
+
+.rules-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 140px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid var(--header-outline);
+    color: var(--header-outline);
+}
+
+@media screen and (min-width: 376px) and (max-width: 599px) {
+    .buttons{
+        height: 72vh;
+    }
+    .triangle{
+        height: 280px;
+    }
+    .svg-scissors{
+        border: 25px solid #eeaf27;
+        bottom: 85%;
+        left: 62%;
+    }
+    
+    .svg-paper{
+        border: 25px solid #2a6de9;
+        bottom: 85%;
+        left: 9%;
+    }
+    
+    .svg-rock{
+        border: 25px solid #f3482a;
+        bottom: 50%;
+        left: 35%;
+    }
+    .btn{
+        margin-top: 20%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .btn{
+        margin-top: 20%;
+    }
+    .triangle{
+        height: 200px;
+    }
+    .buttons{
+        height: 47vh;
+    }
+    .svg-rock, .svg-paper, .svg-scissors{
+        height: 150px;
+        width: 150px;
+    }
+    .svg-scissors{
+        border: 25px solid #eeaf27;
+        bottom: 80%;
+        left: 55%;
+    }
+    
+    .svg-paper{
+        border: 25px solid #2a6de9;
+        bottom: 80%;
+        left: 25%;
+    }
+    
+    .svg-rock{
+        border: 25px solid #f3482a;
+        bottom: 40%;
+        left: 40%;
+    }
+
+    .rules-btn{
+        height: 80px;
+        width: 290px;
+        border-radius: 10px;
+        border: 5px solid var(--header-outline);
+        font-size: 34px;
+    }
+    
+}
+
+@media screen and (min-width: 900px) and (max-width: 1599px){
+    .buttons{
+        position: relative;
+        height: 30vh;
+    }
+
+    .btn{
+        margin-top: 11%;
+    }
+
+    .svg-triangle{
+        margin-top: 10%;
+    }
+    .svg-rock, .svg-paper, .svg-scissors{
+        height: 150px;
+        width: 150px;
+    }
+    .svg-scissors{
+        border: 25px solid #eeaf27;
+        bottom: 80%;
+        left: 55%;
+    }
+    
+    .svg-paper{
+        border: 25px solid #2a6de9;
+        bottom: 80%;
+        left: 34%;
+    }
+    
+    .svg-rock{
+        border: 25px solid #f3482a;
+        bottom: -12%;
+        left: 45%;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .btn{
+        margin-top: 11%;
+    }
+    .svg-triangle{
+        margin-top: 10%;
+    }
+    .svg-rock, .svg-paper, .svg-scissors{
+        height: 150px;
+        width: 150px;
+    }
+    .svg-scissors{
+        border: 25px solid #eeaf27;
+        bottom: 80%;
+        left: 52%;
+    }
+    
+    .svg-paper{
+        border: 25px solid #2a6de9;
+        bottom: 80%;
+        left: 40%;
+    }
+    
+    .svg-rock{
+        border: 25px solid #f3482a;
+        bottom: 40%;
+        left: 46%;
+    }
+    .rules-btn{
+        height: 80px;
+        width: 290px;
+        border-radius: 10px;
+        border: 5px solid var(--header-outline);
+        font-size: 34px;
+    }
+}

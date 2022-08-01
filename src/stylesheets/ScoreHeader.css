@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed);
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed';
+}
+
+:root{
+    --dark-text: hsl(229, 25%, 31%);
+    --score-text: hsl(229, 64%, 46%);
+    --header-outline: hsl(217, 16%, 45%);
+    --bg-radial-gradient: hsl(214, 47%, 23%) to hsl(237, 49%, 15%);
+    --font-weight-sm: 600;
+    --font-weight-md: 700;
+    --white-clr : #f0f0f0;
+}
+
+.head-section{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 30px 30px;
+    padding: 20px 30px;
+    background: transparent;
+    border: 5px solid var(--header-outline);
+    border-radius: 11px;
+}
+
+.app_name{
+    font-weight: var(--font-weight-md);
+    color: var(--white-clr);
+    font-size: 19px;
+
+}
+
+.app_name > div{
+    margin-top: -10%;
+}
+
+.scoreCard{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 60%;
+    height: 64px;
+    margin-top: -3%;
+    background: var(--white-clr);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.scoreText{
+    text-transform: uppercase;
+    font-weight: var(--font-weight-md);
+    font-size: 11px;
+    color: var(--score-text);
+}
+
+.Score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--score-text);
+    font-size: 34px;
+    font-weight: var(--font-weight-md);
+    transform: translateY(-4px);
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .head-section{
+        margin: 100px 100px;
+    }
+
+    .app_name{
+        font-size: 30px;
+    
+    }
+    .scoreCard{
+        margin-left: 75%;
+        height: 80px;
+        margin-top: -1%;
+        padding: 15px 20px;
+        border-radius: 5px;
+    }
+
+    .scoreText{
+        font-size: 16px;
+    }
+    .Score{
+        font-size: 50px;
+        transform: translateY(-13px);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .head-section{
+        margin: 35px 100px;
+    }
+
+    .app_name{
+        font-size: 40px;
+    
+    }
+    .scoreCard{
+        margin-left: 80%;
+        width: 100px;
+        height: 100px;
+        margin-top: 0%;
+    }
+    .scoreText{
+        font-size: 20px;
+    }
+    .Score{
+        font-size: 70px;
+        transform: translateY(-14px);
+    }
+}
